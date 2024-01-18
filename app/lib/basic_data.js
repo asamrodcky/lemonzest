@@ -12,14 +12,12 @@ const ingredients = [
     {
         ingredient_id: 1,
         name: 'Marinara Sauce',
-        sort: 10,
-        primary_key: 1
+        sort: 10
     },
     {
         ingredient_id: 2,
         name: 'Ricotta Cheese',
-        sort: 10,
-        primary_key: 2
+        sort: 10
     }
 ]
 
