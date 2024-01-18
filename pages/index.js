@@ -13,7 +13,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
-        
+
         <div className={styles.description}>
           THIS IS WHERE THE TABLE SHOULD POPULATE
         </div>
@@ -21,7 +21,37 @@ export default function Home() {
         <p className={styles.description}>
           Get started by editing <code>pages/index.js</code>
         </p>
-
+        <div>
+          <table>
+            <tr>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+              <th>Saturday</th>
+              <th>Sunday</th>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>28</td>
+              <td>28</td>
+              <td>28</td>
+              <td>28</td>
+              <td>28</td>
+              <td>28</td>
+            </tr>
+            <tr>
+              <td>35</td>
+              <td>21</td>
+              <td>34</td>
+              <td>00</td>
+              <td>8</td>
+              <td>75</td>
+              <td>24</td>
+            </tr>
+          </table>
+        </div>
       </main>
 
       <footer>
@@ -77,6 +107,9 @@ export default function Home() {
             Courier New,
             monospace;
         }
+        table, th, td {
+          border:1px solid green;
+       } 
       `}</style>
 
       <style jsx global>{`
