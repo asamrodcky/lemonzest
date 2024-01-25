@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
+import RecipesChart from '../app/ui/list-recipes';
+import { Suspense } from 'react';
 
 export default function Home() {
   return (
@@ -12,16 +14,16 @@ export default function Home() {
 
       <main>
         <h1 className={styles.banner}>
-          LEMON ZEST<Image src='https://upload.wikimedia.org/wikipedia/commons/f/fa/Lemon.svg' width='100' height='100' />
+          LEMON ZEST<Image src='https://upload.wikimedia.org/wikipedia/commons/f/fa/Lemon.svg' width='100' height='100'  />
         </h1>
 
         <div className={styles.description}>
           THIS IS WHERE THE TABLE SHOULD POPULATE
         </div>
 
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <Suspense>
+          <RecipesChart />
+        </Suspense>
         <div>
           {/* <table>
             <tr>
