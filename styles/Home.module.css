@@ -1,14 +1,24 @@
+.banner {
+  display: inline-flex;
+  justify-content: center;
+  background-color:#f3f300;
+  color: #348c4b;
+  width: 100%;
+  font-size:40px;
+  align-items: center;
+}
+
 .container {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .title a {
-  color: #0070f3;
+  color: green;
   text-decoration: none;
 }
 
@@ -84,9 +94,9 @@
   height: 1em;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
-}
+} */

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -10,8 +11,8 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        <h1 className={styles.banner}>
+          LEMON ZEST<Image src='https://upload.wikimedia.org/wikipedia/commons/f/fa/Lemon.svg' width='100' height='100' />
         </h1>
 
         <div className={styles.description}>
@@ -22,7 +23,7 @@ export default function Home() {
           Get started by editing <code>pages/index.js</code>
         </p>
         <div>
-          <table>
+          {/* <table>
             <tr>
               <th>Monday</th>
               <th>Tuesday</th>
@@ -50,7 +51,7 @@ export default function Home() {
               <td>75</td>
               <td>24</td>
             </tr>
-          </table>
+          </table> */}
         </div>
       </main>
 
@@ -65,7 +66,7 @@ export default function Home() {
         </a>
       </footer>
 
-      <style jsx>{`
+      {/* <style jsx>{`
         main {
           padding: 5rem 0;
           flex: 1;
@@ -133,7 +134,7 @@ export default function Home() {
         * {
           box-sizing: border-box;
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 }
