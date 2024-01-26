@@ -14,7 +14,7 @@ export default function Home() {
 
       <main>
         <h1 className={styles.banner}>
-          LEMON ZEST<Image src='https://upload.wikimedia.org/wikipedia/commons/f/fa/Lemon.svg' width='100' height='100'  />
+          LEMON ZEST<Image src='https://upload.wikimedia.org/wikipedia/commons/f/fa/Lemon.svg' alt="It's a lemon" width='100' height='100'  />
         </h1>
 
         <div className={styles.description}>

@@ -15,7 +15,7 @@ export default async function RecipesChart() {
                     {allRecipes.map((recipe, i) => {
                         return (
                             <div
-                                key={recipe.id}
+                                key={i}
                                 className={clsx('flex flex-row items-center justify-between py-4',
                                     { 'border-t': i !== 0 }
                                 )}

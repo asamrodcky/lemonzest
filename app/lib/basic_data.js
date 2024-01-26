@@ -1,6 +1,6 @@
 const recipes = [
     {
-        id: 1,
+        id: "3958dc9e-712f-4377-85e9-fec4b6a6442a",
         alt: 'It is a lasagna',
         name: 'Lasagna',
         description: 'Italian pasta casserole',
@@ -8,42 +8,42 @@ const recipes = [
         image: 'https://upload.wikimedia.org/wikipedia/commons/b/ba/Lasagne_-_stonesoup.jpg'
     },
     {
-        id: 2,
+        id: "3958dc9e-742f-4377-85e9-fec4b6a6442a",
         alt: 'It is a spaghetti',
         name: 'Spaghetti',
         description: "It's spaghetti, for god's sake",
         instructions: '1. Make the spaghetti.  2.  Eat the spaghetti',
         image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Spaghetti_al_Pomodoro.JPG/2560px-Spaghetti_al_Pomodoro.JPG'
     }
+];
+
+const ingredients = [
+    {
+        ingredient_id: 1,
+        name: 'Marinara Sauce',
+        sort: 10
+    },
+    {
+        ingredient_id: 2,
+        name: 'Ricotta Cheese',
+        sort: 10
+    }
 ]
 
-// const ingredients = [
-//     {
-//         ingredient_id: 1,
-//         name: 'Marinara Sauce',
-//         sort: 10
-//     },
-//     {
-//         ingredient_id: 2,
-//         name: 'Ricotta Cheese',
-//         sort: 10
-//     }
-// ]
-
-// const units = [
-//     {
-//         unit_id: 1,
-//         name: 'ounces',
-//         sort: 10,
-//         primary_key: 1
-//     },
-//     {
-//         ingredient_id: 2,
-//         name: 'cups',
-//         sort: 10,
-//         primary_key: 2
-//     }
-// ]
+const units = [
+    {
+        unit_id: 1,
+        name: 'ounces',
+        sort: 10,
+        primary_key: 1
+    },
+    {
+        unit_id: 2,
+        name: 'cups',
+        sort: 10,
+        primary_key: 2
+    }
+]
 
 // const recipe_ingredients = [
 //     {
@@ -119,3 +119,9 @@ const recipes = [
 
 // // -- INSERT INTO recipe_ingredients (recipe_id, ingredient_id, unit_id, amount, sort)
 // // -- VALUES (2, 1, 1, 3.4, 10);
+
+module.exports = {
+    recipes,
+    ingredients,
+    units
+}
